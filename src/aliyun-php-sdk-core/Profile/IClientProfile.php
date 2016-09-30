@@ -17,13 +17,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace Aliyun\Profile;
 interface IClientProfile
 {
-	public function getSigner();
-	
-	public function getRegionId();
-	
-	public function getFormat();
-	
-	public function getCredential();
+    public function getSigner();
+
+    public function getRegionId();
+
+    public function getFormat();
+
+    public function getCredential();
 }

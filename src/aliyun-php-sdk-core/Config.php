@@ -17,12 +17,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-include_once 'Autoloader/Autoloader.php';
-include_once 'Regions/EndpointConfig.php';
+//include_once 'Autoloader/Autoloader.php';
+//include_once 'Regions/EndpointConfig.php';
 
 
 //config sdk auto load path.
-Autoloader::addAutoloadPath("aliyunsdk-php-sdk-sms");
+//Autoloader::addAutoloadPath("aliyunsdk-php-sdk-sms");
 //Autoloader::addAutoloadPath("aliyunsdk-php-sdk-ecs");
 //Autoloader::addAutoloadPath("aliyunsdk-php-sdk-batchcompute");
 //Autoloader::addAutoloadPath("aliyunsdk-php-sdk-sts");
@@ -32,7 +32,15 @@ Autoloader::addAutoloadPath("aliyunsdk-php-sdk-sms");
 //Autoloader::addAutoloadPath("aliyunsdk-php-sdk-ubsms-inner");
 //Autoloader::addAutoloadPath("aliyunsdk-php-sdk-green");
 
-//config http proxy	
-define('ENABLE_HTTP_PROXY', FALSE);
-define('HTTP_PROXY_IP', '127.0.0.1');
-define('HTTP_PROXY_PORT', '8888');
+//config http proxy
+namespace Aliyun;
+class Config
+{
+    static function init()
+    {
+        define('ENABLE_HTTP_PROXY', FALSE);
+        define('HTTP_PROXY_IP', '127.0.0.1');
+        define('HTTP_PROXY_PORT', '8888');
+        \Aliyun\Regions\EndpointConfig::init();
+    }
+}

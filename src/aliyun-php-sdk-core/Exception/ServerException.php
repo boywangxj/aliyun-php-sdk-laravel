@@ -17,13 +17,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace Aliyun\Exception;
 class ServerException extends ClientException
 {
 
-	function  __construct($errorMessage, $errorCode)
-	{
-		parent::__construct($errorMessage, $errorCode);
-		$this->setErrorType("Server");
-	}
+    function __construct($errorMessage, $errorCode)
+    {
+        parent::__construct($errorMessage, $errorCode);
+        $this->setErrorType("Server");
+    }
 
 }

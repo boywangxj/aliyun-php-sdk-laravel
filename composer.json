@@ -25,7 +25,7 @@
     "autoload": {
         "psr-4": {
             "Aliyun\\": "src/aliyun-php-sdk-core",
-            "Aliyun\\Sms\\":"src/aliyun-php-sdk-sms"
+            "Aliyun\\Sms\\":"src/aliyun-php-sdk-sms/Sms/Request/V20160927"
         }
     }
 }
