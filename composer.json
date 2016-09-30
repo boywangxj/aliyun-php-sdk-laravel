@@ -1,0 +1,33 @@
+{
+    "name": "aijia/aliyun",
+    "description": "阿里云SDK for laravel",
+    "keywords": [
+        "aliyun",
+        "sdk",
+        "阿里云",
+        "sms",
+        "短信"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent",
+            "email": "boywangxj@gmail.com"
+        }
+    ],
+    "require": {
+        "php":">=5.3.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "overtrue/phplint": "*",
+        "mockery/mockery": "^1.0@dev"
+    },
+    "minimum-stability" : "dev",
+    "autoload": {
+        "psr-4": {
+            "Aliyun\\": "src/aliyun-php-sdk-core",
+            "Aliyun\\Sms\\":"src/aliyun-php-sdk-sms"
+        }
+    }
+}
