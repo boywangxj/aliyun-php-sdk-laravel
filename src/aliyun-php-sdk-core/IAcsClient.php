@@ -17,7 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace Aliyun;
 interface IAcsClient
 {
-	public function doAction($requst);
+    public function doAction($requst);
 }

@@ -17,9 +17,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Sms\Request\V20160927;
-
-class QuerySmsFailByPageRequest extends \RpcAcsRequest
+namespace Aliyun\Sms;
+use Aliyun\RpcAcsRequest;
+class QuerySmsFailByPageRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{

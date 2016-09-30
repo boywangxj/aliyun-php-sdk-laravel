@@ -17,28 +17,29 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace Aliyun;
 class AcsResponse
 {
-	private $code;	
-	private $message;
-	
-	public function getCode()
-	{
-		return $this->code;
-	}
-	
-	public function setCode($code)
-	{
-		$this->code = $code;
-	}
-	
-	public function getMessage()
-	{
-		return $this->message;
-	}
-	
-	public function setMessage($message)
-	{
-		$this->message = $message;
-	}
+    private $code;
+    private $message;
+
+    public function getCode()
+    {
+        return $this->code;
+    }
+
+    public function setCode($code)
+    {
+        $this->code = $code;
+    }
+
+    public function getMessage()
+    {
+        return $this->message;
+    }
+
+    public function setMessage($message)
+    {
+        $this->message = $message;
+    }
 }

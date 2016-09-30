@@ -17,19 +17,22 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+namespace Aliyun\Auth;
 class ShaHmac1Signer implements ISigner
 {
-	public function signString($source, $accessSecret)
-	{
-		return	base64_encode(hash_hmac('sha1', $source, $accessSecret, true));
-	}
-	
-	public function  getSignatureMethod() {
-		return "HMAC-SHA1";
-	}
+    public function signString($source, $accessSecret)
+    {
+        return base64_encode(hash_hmac('sha1', $source, $accessSecret, true));
+    }
 
-	public function getSignatureVersion() {
-		return "1.0";
-	}
+    public function getSignatureMethod()
+    {
+        return "HMAC-SHA1";
+    }
+
+    public function getSignatureVersion()
+    {
+        return "1.0";
+    }
 
 }
