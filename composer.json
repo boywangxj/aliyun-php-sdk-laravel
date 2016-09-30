@@ -1,6 +1,7 @@
 {
-    "name": "aijia/aliyun",
-    "description": "阿里云SDK for laravel",
+    "name": "aijiasoft/aliyun",
+    "type": "library",
+    "description": "aliyun SDK for laravel",
     "keywords": [
         "aliyun",
         "sdk",
@@ -17,6 +18,9 @@
     ],
     "require": {
         "php":">=5.3.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
     },
     "autoload": {
         "psr-4": {
